@@ -4,18 +4,24 @@
       table {
         border-collapse: collapse;
         font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
       }
       table,
       td,
       tr {
         border: 1px solid black;
       }
+
+      td {
+          text-align:center;
+      }
+
       /* para los pares */
-      .par {
+      tbody tr:nth-child(odd) {
         background-color: rgb(74, 158, 228);
         color: white;
       }
-      .impar {
+      tbody tr:nth-child(even) {
         background-color: rgb(10, 85, 176);
         color: white;
       }
@@ -35,27 +41,27 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="par">
+        <tr>
           <td>empresa A</td>
           <td>factura 1</td>
           <td>200.50</td>
         </tr>
 
-        <tr class="impar">
+        <tr>
           <td>empresa B</td>
           <td>Factura 2</td>
           <td>300.30</td>
         </tr>
-        <tr class="par">
-            <td>empresa B</td>
-            <td>Factura 2</td>
-            <td>300.30</td>
-          </tr>
-          <tr class="impar">
-            <td>empresa B</td>
-            <td>Factura 2</td>
-            <td>300.30</td>
-          </tr>
+        <tr>
+          <td>empresa B</td>
+          <td>Factura 2</td>
+          <td>300.30</td>
+        </tr>
+        <tr>
+          <td>empresa B</td>
+          <td>Factura 2</td>
+          <td>300.30</td>
+        </tr>
       </tbody>
       <tfoot>
         <tr>
