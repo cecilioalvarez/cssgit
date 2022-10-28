@@ -2,28 +2,41 @@
   <head>
     <style>
       ul {
-
         list-style-type: none;
         padding:0px;
         margin:0px;
         width: 150px;
         font-family: Arial, Helvetica, sans-serif;
 
+      }
+      li a {
+        border: 1px solid rgb(83, 72, 226);
+      }
 
-      }
-      li {
-        border: 1px solid white;
-      }
       li a {
         color:white;
         background-color: rgb(83, 72, 226);
         display: block;
         text-decoration: none;
         padding: 30px;
+       
       }
         li a:hover {
           background-color: rgb(180, 204, 179);
           color:black;
+          
+        }
+        #primero a {
+
+          border-radius: 10px 10px 0px 0px;
+        }
+        
+
+
+        #ultimo  a {
+
+
+          border-radius: 0px 0px 10px 10px;
         }
 
 
@@ -32,10 +45,10 @@
   </head>
   <body>
     <ul>
-      <li><a href="http://www.elpais.es">El Pais</a></li>
+      <li id="primero"><a href="http://www.elpais.es">El Pais</a></li>
       <li><a href="http://www.elmundo.es">El Mundo</a></li>
       <li><a href="http://www.lavanguardia.com">La Vanguardia</a></li>
-      <li><a href="http://www.elcorreo.com">El Correo</a></li>
+      <li id="ultimo"><a href="http://www.elcorreo.com">El Correo</a></li>
     </ul>
   </body>
 </html>
