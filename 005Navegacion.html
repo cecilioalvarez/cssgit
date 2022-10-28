@@ -4,36 +4,49 @@
       /* estilo de la lista*/
       ul {
         list-style-type: none;
-        padding:0px;
-        margin:0px;
+        padding: 0px;
+        margin: 0px;
         width: 150px;
         font-family: Arial, Helvetica, sans-serif;
-
       }
-      
-      /* aplico estilo a los enlaces y colores */
+
+      /* aplico estilo a los enlaces y colores*/
       li a {
         border: 1px solid rgb(83, 72, 226);
-        color:white;
+        color: white;
         background-color: rgb(83, 72, 226);
         display: block;
         text-decoration: none;
         padding: 30px;
       }
-        li a:hover {
-          background-color: rgb(180, 204, 179);
-          color:black;
-          
-        }
-        #primero a {
-          border-radius: 10px 10px 0px 0px;
-        }
-        #ultimo  a {
-          border-radius: 0px 0px 10px 10px;
-        }
+      li a:hover {
+        background: -moz-linear-gradient(
+          -45deg,
+          #1f0cce 0%,
+          #4481a4 50%,
+          #c5c2c5 100%
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          #1f0cce 0%,
+          #4481a4 50%,
+          #c5c2c5 100%
+        );
+        background: linear-gradient(
+          135deg,
+          #1f0cce 0%,
+          #4481a4 50%,
+          #c5c2c5 100%
+        );
 
-
-      
+        color: black;
+      }
+      #primero a {
+        border-radius: 10px 10px 0px 0px;
+      }
+      #ultimo a {
+        border-radius: 0px 0px 10px 10px;
+      }
     </style>
   </head>
   <body>
