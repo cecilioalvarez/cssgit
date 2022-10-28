@@ -1,14 +1,23 @@
 <html>
   <head>
     <style>
+      table {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+      }
       table,
       td,
       tr {
         border: 1px solid black;
       }
-      tbody {
-          background-color: rgb(74, 158, 228);
-          color:white;
+      /* para los pares */
+      .par {
+        background-color: rgb(74, 158, 228);
+        color: white;
+      }
+      .impar {
+        background-color: rgb(10, 85, 176);
+        color: white;
       }
     </style>
   </head>
@@ -20,26 +29,36 @@
       </caption>
       <thead>
         <tr>
-          <th>Columna1</th>
-          <th>Columna2</th>
+          <th>Empresa</th>
+          <th>Concepto</th>
+          <th>importe</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="par">
           <td>empresa A</td>
           <td>factura 1</td>
           <td>200.50</td>
         </tr>
 
-        <tr>
+        <tr class="impar">
           <td>empresa B</td>
           <td>Factura 2</td>
           <td>300.30</td>
         </tr>
+        <tr class="par">
+            <td>empresa B</td>
+            <td>Factura 2</td>
+            <td>300.30</td>
+          </tr>
+          <tr class="impar">
+            <td>empresa B</td>
+            <td>Factura 2</td>
+            <td>300.30</td>
+          </tr>
       </tbody>
       <tfoot>
         <tr>
-          
           <td colspan="2">sumatorio</td>
           <td>500.80</td>
         </tr>
