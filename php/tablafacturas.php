@@ -1,27 +1,32 @@
-
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "curso2";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
 
 $sql = "select * from Facturas";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "numero: " . $row["numero"]. " - concepto: " . $row["concepto"]. " " . $row["importe"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
+$resultado = $conn->query($sql);
 ?>
+
+<html>
+<body>
+<table>
+<?php while($fila = $resultado->fetch_assoc()){?>
+
+    <tr>
+      <td><?=$fila["numero"]?></td>
+      <td><?=$fila["concepto"]?></td>
+      <td><?=$fila["importe"]?></td>
+</tr>
+<?php}?>
+</table>
+</body>
+</html>
+<?php $conn->close();?>
+
+
+
+
+
