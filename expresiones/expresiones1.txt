@@ -1,0 +1,5 @@
+factura1.doc es la factura de juan
+factura2.doc es la factura de luis
+factura3.doc es la factura de ana
+//expresion
+factura..?\.doc
