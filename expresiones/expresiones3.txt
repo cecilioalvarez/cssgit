@@ -1,0 +1,7 @@
+Factura1.txt bla bla bla
+Factura2.txt bla bla
+factura3.doc bla 
+facturas.txt ble
+factura5.doc blo 
+
+[fF]actura[0123456789]\....
