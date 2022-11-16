@@ -4,3 +4,10 @@ entregamos la compra a  7222812-L
 entregamos la compra a 10292812*L
 
 \d{7,8}-?[A-Z]
+
+pepe.txt
+juan.txt
+
+[a-z]{3,7}.txt
+juan txt
+pepe txt
