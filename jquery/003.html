@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   
+   <script type="text/javascript">
+
+    $(document).ready( function() {
+
+       $("#boton").click(function() {
+       
+            $("#parrafo1").css("color","blue");
+
+       });
+       $("#boton2").click(function() {
+       
+       $("#parrafo1").css("color","red");
+
+  });
+
+    });
+
+
+
+    </script>
+</head>
+<body>
+    <p id="parrafo1">hola soy un parrafo</p>
+    <input type="button" id="boton" value="pulsame"/>
+    <input type="button" id="boton2" value="pulsame2"/>
+</body>
+</html>
