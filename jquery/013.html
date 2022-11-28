@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   
+   <script type="text/javascript">
+
+    $(document).ready( function() {
+        $("#botonSumar").click(function() {
+         var n1= parseInt($("#numero1").val());
+         var n2= parseInt($("#numero2").val());
+         $("#zona").html(n1+n2);         
+        })
+
+    });
+    </script>
+</head>
+<body>
+    <input type="text" id="numero1" />
+    <input type="text" id="numero2" />
+    
+    <input type="button" id="botonSumar" value="+"/>
+    <div id="zona">
+
+    </div>
+   
+</body>
+</html>

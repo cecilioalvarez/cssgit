@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   
+   <script type="text/javascript">
+
+    $(document).ready( function() {
+
+
+        $("#boton").click(function() {
+            
+          var numero=parseInt($("#numero").val());
+
+          $("#zona").empty();
+          for (var i=1;i<=10;i++) {
+
+            $("#zona").append("<p>"+(numero*i)+"</p>");
+          }
+            
+         
+        })
+       
+    });
+
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="numero" />
+    <input type="button" id="boton" value="leer"/>
+    <div id="zona">
+
+    </div>
+   
+</body>
+</html>
