@@ -8,8 +8,7 @@ $dbname = "videoclub";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "select numero, date_format(fecha,'%d/%m/%Y') as fecha,titulo
-
+$sql = "select numero, date_format(fecha,'%d/%m/%Y') as fecha,titulo 
 from Alquileres inner join Peliculas 
 on Peliculas.isbn= Alquileres.peliculas_isbn 
  where  clientes_dni='".$_GET["dni"]."'";
