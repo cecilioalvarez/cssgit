@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      img {
+        opacity: 50%;
+      }
+      
+      .iluminar {
+        opacity: 100%;
+      }
+
+    </style>
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
@@ -9,18 +19,20 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#ocultar").click(function () {
-          $("img").hide();
-        });
-        $("#mostrar").click(function () {
-          $("img").show();
-        });
+        
+        $("img").click(function() {
+
+          $(this).addClass("iluminar");
+        })
+
       });
     </script>
   </head>
   <body>
     <img src="imagen.jpeg" width="30%" height="30%" />
-    <input type="button" id="ocultar" value="ocultar" />
-    <input type="button" id="mostrar" value="mostrar" />
+    <img src="imagen.jpeg" width="30%" height="30%" />
+    <img src="imagen.jpeg" width="30%" height="30%" />
+    
+ 
   </body>
 </html>
