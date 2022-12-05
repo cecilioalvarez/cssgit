@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+ 
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                $("#nombre").keyup(function() {
+
+                    if ($(this).val()!="") {
+                        $("#errorNombre").css("display","none");
+                    }else {
+
+                        $("#errorNombre").css("display","inline");
+                    }
+                })
+            })
+
+            function validar() {
+
+                return validarCampoVacio("#nombre","#errorNombre") && validarCampoVacio("#apellidos","#errorApellidos");
+            }
+
+
+            
+
+            
+            function validarCampoVacio(campo,error) {
+
+                if ($(campo).val()=="") {
+                    $(error).css("display","inline");
+                    return false;
+                }else {
+                    return true;
+                }
+
+            }
+        </script>
+        <style>
+            .error {
+                color:red;
+                display: none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return validar()" 
+        action="destino.php">
+            <p>
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre"/>
+            <span id="errorNombre" class="error">
+                falta el nombre
+            </span>
+            </p>
+
+            <p>
+                <label for="apellidos">apellidos</label>
+                <input type="text" id="apellidos" 
+                name="apellidos"/>
+                <span id="errorApellidos" class="error">
+                    falta apellido
+                </span>
+                </p>
+            <p>
+            <input type="submit" value="enviar"/>
+        </p> 
+        </form>
+    </body>
+</html>
