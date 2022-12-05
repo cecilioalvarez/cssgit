@@ -4,10 +4,26 @@
  
         <script type="text/javascript">
 
+            $(document).ready(function() {
+
+                $("#nombre").keyup(function() {
+
+                    if ($(this).val()!="") {
+                        $("#errorNombre").css("display","none");
+                    }else {
+
+                        $("#errorNombre").css("display","inline");
+                    }
+                })
+            })
+
+
+
             function validar() {
                 if ($("#nombre").val()=="") {
 
-                    alert("nombre vacio");
+                    //alert("nombre vacio");
+                    $("#errorNombre").css("display","inline");
                     return false;
                 }else {
                     return true;
@@ -18,7 +34,8 @@
         <style>
             .error {
                 color:red;
-                
+                display: none;
+
             }
         </style>
     </head>
