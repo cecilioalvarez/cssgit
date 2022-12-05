@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+ 
+        <script type="text/javascript">
+
+            function validar() {
+                if ($("#nombre").val()=="") {
+
+                    alert("nombre vacio");
+                    return false;
+                }else {
+                    return true;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validar()" 
+        action="destino.php">
+            <p>
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre"/>
+            <span id="errorNombre" class="error">
+                falta el nombre
+            </span>
+            </p>
+            <p>
+            <input type="submit" value="enviar"/>
+        </p> 
+        </form>
+    </body>
+</html>

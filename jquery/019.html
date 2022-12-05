@@ -5,7 +5,6 @@
       img {
         opacity: 50%;
       }
-
       .iluminar {
         opacity: 100%;
       }
@@ -17,15 +16,17 @@
     ></script>
 
     <script type="text/javascript">
-      $(document).ready(function () {
-        $("img").click(function () {
-          if (!$(this).hasClass("iluminar")) {
-            
-            $(this).addClass("iluminar");
-          } else {
-            $(this).removeClass("iluminar");
-          }
-        });
+      $(document).ready(function (){
+       
+        $("img").hover(function() {
+
+          $(this).addClass("iluminar");
+
+        },function() {
+
+          $(this).removeClass("iluminar");
+        })
+      
       });
     </script>
   </head>
