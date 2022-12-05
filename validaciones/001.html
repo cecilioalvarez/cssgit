@@ -17,13 +17,29 @@
                 })
             })
 
-
-
             function validar() {
+
+                return validarNombre() && validarApellido();
+            }
+
+
+            function validarNombre() {
                 if ($("#nombre").val()=="") {
 
                     //alert("nombre vacio");
                     $("#errorNombre").css("display","inline");
+                    return false;
+                }else {
+                    return true;
+                }
+                
+            }
+
+            function validarApellido() {
+                if ($("#apellido").val()=="") {
+
+                    //alert("nombre vacio");
+                    $("#errorApellido").css("display","inline");
                     return false;
                 }else {
                     return true;
