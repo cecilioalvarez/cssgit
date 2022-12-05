@@ -10,9 +10,7 @@
         
       $(document).ready(function () {
 
-        validarCampoVacioPulsacion("#nombre","#errorNombre");
-        validarCampoVacioPulsacion("#apellidos","#errorApellidos");
-
+      
       });
 
       function validar() {
@@ -22,18 +20,7 @@
         );
       }
 
-      function validarCampoVacioPulsacion(campo,error) {
-
-
-        $(campo).keyup(function () {
-          if ($(this).val() != "") {
-            $(error).css("display", "none");
-          } else {
-            $(error).css("display", "inline");
-          }
-        });
-
-      }
+      
       
       function validarCampoVacio(campo, error) {
         if ($(campo).val() == "") {

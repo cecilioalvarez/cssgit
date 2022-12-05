@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+<script type="text/javascript">
+
+  function validar() {
+
+      if ($("#numero1").val()<$("#numero2").val()) {
+
+        return true;
+      }else {
+        alert("la nota 2 no puede ser menor que la 1")
+        return false;
+      }
+
+  }
+
+</script>
+  </head>
+  <body>
+      <form onsubmit="return validar()" action="destino.php">
+        <p>
+        Examen Suspenso:<input type="number" id="numero1" max="10" min="0" required/>
+      </p>
+      <p>
+        Examen aprobado:<input type="number" id="numero2" max="10" min="0" required/>
+      </p>
+        <input type="submit" value="enviar" />
+      </p>
+    </form>
+  </body>
+</html>
