@@ -42,8 +42,6 @@ $resultado = $conn->query($sql);
 
         alert($("#nombre").val());
        })
-
-
     })
     </script>
 
