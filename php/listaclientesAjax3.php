@@ -49,7 +49,8 @@ $resultado = $conn->query($sql);
         e.preventDefault();
         var nombre=$("#nombre").val();
        
-        $.get("tablaClientesAjax.php?nombre="+nombre,function(datos) {
+        $.get("tablaClientesAjax.php?nombre="+nombre
+        ,function(datos) {
 
             $("#datos").empty().append(datos);
 
