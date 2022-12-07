@@ -9,7 +9,7 @@ $dbname = "videoclub";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $sql = "select * from Clientes";
-if (!is_null($_GET["nombre"])) {
+if (isset($_GET["nombre"])) {
 
     $sql=$sql. " where nombre='". $_GET["nombre"]."'";
 }
