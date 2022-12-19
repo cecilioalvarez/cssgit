@@ -24,23 +24,21 @@
     ></script>
 
     <script type="text/javascript">
+      $(document).ready(function () {
+        $("#boton").click(function () {
+          $("#cajamodal").modal("show");
+        });
 
-           $(document).ready (function() {
-            $('#boton').click(function() {
-
-             $("#cajamodal").modal('show');
-            })
-
-            $('#salvar').click(function() {
-
-              $("#cajamodal").modal('hide');
-            })
-            $('#cerrar').click(function() {
-
-               $("#cajamodal").modal('hide');
-            })
-
-           })
+        $("#salvar").click(function () {
+          $("#cajamodal").modal("hide");
+        });
+        $("#cerrar").click(function () {
+          $("#cajamodal").modal("hide");
+        });
+        $("#minicerrar").click(function () {
+          $("#cajamodal").modal("hide");
+        });
+      });
     </script>
   </head>
 
@@ -64,6 +62,7 @@
               <button
                 type="button"
                 class="close"
+                id="minicerrar"
                 data-dismiss="modal"
                 aria-label="Close"
               >
